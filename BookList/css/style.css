@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root {
+  --box-shadow: 0 6px 9px rgba(0, 0, 0, 0.28), 0 6px 9px rgba(0, 0, 0.28);
+}
+
+#tablez {
+    background-color:rgb(71, 86, 87);
+    border-radius: 6px;
+}
+
+#head {
+    background-color: crimson;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    
+}
+
+.texto {
+    color:darkgray
+}
+
+#hed {
+    text-align: center;
+}
+
+#bdn {
+    font-size: larger;
+}
