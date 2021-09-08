@@ -1,2 +1,2 @@
 # BookList-repo
-A simple booklist order
+A simple booklist with Vanilla JavaScript
