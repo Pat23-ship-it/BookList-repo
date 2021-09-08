@@ -1,2 +1,2 @@
 # BookList-repo
-A simple booklist with Vanilla JavaScrip
+A simple booklist with Vanilla JavaScript
