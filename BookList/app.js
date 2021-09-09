@@ -3,9 +3,7 @@ class Book {
     constructor(title,author,isbn){
         this.title = title;
         this.author = author;
-        this.isbn = isbn
-       
-        
+        this.isbn = isbn  
       
     }
 }
@@ -25,14 +23,12 @@ class UI {
             const list = document.getElementById('book-list');
             //create an element
             const row = document.createElement('tr')
+            
             //insert table
             row.innerHTML = 
                 `<td>${book.title}</td>
                 <td>${book.author}</td>
                 <td>${book.isbn}</td> 
-              
-               
-                
             
                 <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>`
 
@@ -41,11 +37,6 @@ class UI {
                 
         }
 
-
-
-
-
-          
 
         static deleteBook(el) {
             if(el.classList.contains('delete')) {
@@ -73,7 +64,7 @@ class UI {
             }
 
         
-
+       //clear fields
         static clearFields() {
              document.getElementById('title').value = ''
              document.getElementById('author').value = ''
@@ -114,15 +105,10 @@ class Store {
       localStorage.setItem('books', JSON.stringify(books))
     }
 
-    
-
-
-
-
-
+  
 }
 
-//Event Display Books
+//Event Listeners
 document.addEventListener('DOMContentLoaded',UI.displayBooks)
 
 //Event:Add a Book
@@ -133,11 +119,9 @@ document.getElementById('book-form').addEventListener('submit',(e) => {
     const author = document.getElementById('author').value;
     const isbn = document.getElementById('isbn').value;
    
-  
-    
-    
 
-    //validate
+
+    //validate Book
     if(title === '' || author === '' || isbn === '') {
         UI.showAlert('Please enter all fields', 'danger')
     }else {
@@ -163,10 +147,6 @@ document.getElementById('book-form').addEventListener('submit',(e) => {
    
     
 });
-
-
-  
-
 
 
 //Event:Remove a Book
